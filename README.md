@@ -1,7 +1,7 @@
-# script
+# Scripts
 Various scripts I typically use everywhere I set up a development environment.
 
-# Git aliases
+## Git aliases
 Things to put into `~/.gitconfig`
 
 ```
