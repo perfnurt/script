@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+find . -name '*.orig' -delete -print
