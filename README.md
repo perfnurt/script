@@ -15,7 +15,7 @@ Things to put into `~/.gitconfig`
     local-branches = !git branch -vv | cut -c 3- | awk '$3 !~/\\[/ { print $1 }'
     delete-local = !git local-branches | xargs -r git branch -D
     st = status
-    up-push = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
+    push-new = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     merged = !git branch --merged | egrep -v '(^\\*|master)'
     delete-merged = !git merged | xargs -r git branch -D
     recent !git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n15
