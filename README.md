@@ -18,5 +18,5 @@ Things to put into `~/.gitconfig`
     up-push = !git push -u origin $(git rev-parse --abbrev-ref HEAD)
     merged = !git branch --merged | egrep -v '(^\\*|master)'
     delete-merged = !git merged | xargs -r git branch -D
-    alias.recent !git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n15
+    recent !git reflog | egrep -io 'moving from ([^[:space:]]+)' | awk '{ print $3 }' | awk ' !x[$0]++' | head -n15
 ```
